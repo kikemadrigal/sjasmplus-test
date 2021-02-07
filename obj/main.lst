@@ -29,7 +29,7 @@
  28   8225 C9               ret
  29   8226              ver_resultado_suma:
  30   8226 3A 38 82         ld a,(direccion_memoria_sumar)
- 31   8229 C6 30            add a,48
+ 31   8229 C6 30            add a,48; el 48 es donde empiezan los números en la tabla ASCII
  32   822B CD A2 00         call CHPUT
  33   822E C9               ret
  34   822F
