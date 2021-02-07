@@ -1,3 +1,4 @@
+        output "main.bin"
     db   0FEh               ; ID archivo binario, siempre hay que poner el mismo 0FEh
     dw   INICIO             ; dirección de inicio
     dw   FINAL - 1          ; dirección final

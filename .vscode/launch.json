@@ -1,4 +1,7 @@
 {
+    //https://github.com/S0urceror/DeZog/releases
+    //code --install-extension dezog-1.3.5.vsix
+    //Complemento vscode DeZog
     "version": "0.2.0",
     "configurations": [
         {
@@ -10,6 +13,7 @@
                 {
                     "path": "obj/main.lst",
                     "useFiles": true,
+                    //"asm": "tools\\sjasmplus\\windows\\sjasmplus.exe",
                     "asm": "sjasmplus",
                     "mainFile": "src/main.asm",
                     //"pcInSlot": "3 2 3",

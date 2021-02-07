@@ -4,8 +4,12 @@ rem para desactivar los mensajes de los programas
 
 rem /************Compilando a ensamblador******************/
 rem glass compiler (http://www.grauw.nl/projects/glass/) es un compilador de ensamblador z80 que puedo convertir tu código ensamblador en los archivos binarios.rom y .bin
-java -jar  tools\glass\glass-0.5.jar src\main.asm main.bin main.sym
-move /Y main.bin ./bin
+rem java -jar  tools\glass\glass-0.5.jar src\main.asm main.bin main.sym
+rem sjasmplus: https://github.com/z00m128/sjasmplus
+tools\sjasmplus\windows\sjasmplus.exe --sym=main.sym --lst=main.lst src/main.asm 
+move /Y main.bin ./obj
+move /Y main.lst ./obj
+move /Y main.sym ./obj
 rem del /F src/main.lst
 
 rem /************Preparando files******************/
